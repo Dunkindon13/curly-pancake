@@ -20,6 +20,6 @@ export class DadJokeService {
   }
 
   getRandomDadJoke(): Observable<any> {
-    return this.http.get('https://icanhazdadjoke.com/api#fetch-a-random-dad-joke');
+    return this.http.get('https://icanhazdadjoke.com');
   }
 }
