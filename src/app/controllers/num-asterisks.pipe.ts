@@ -5,8 +5,8 @@
 })
 export class NumAsterisksPipe implements PipeTransform {
 
-  transform(counter: any, args: any): any {
-    let toReturn = counter.valueOf();
+  transform(output: any, args: any): any {
+    let toReturn = output.valueOf();
     toReturn = toReturn / 5;
 
     let asterisks = [];

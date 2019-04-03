@@ -10,10 +10,7 @@ import {DadJokeService} from "../../models/dad-joke.service";
 export class DadJokeComponent implements OnInit {
   dadJokeUrl: string;
 
-  constructor(private dadJokeFetcher: DadJokeService, private route: ActivatedRoute) {
-    this.route.paramMap.subscribe(params => {
-      this.dadJokeUrl = params.get('name');
-    });
+  constructor(private dadJokeFetcher: DadJokeService) {
   }
 
   ngOnInit() {

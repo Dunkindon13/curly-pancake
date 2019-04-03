@@ -9,17 +9,17 @@ import { HttpHeaders } from '@angular/common/http';
 })
 export class DadJokeService {
 
-  const httpOptions = {
+// Adding a header for Dad Joke api
+  /*const httpOptions = {
     headers: new HttpHeaders({
-      'Content-Type':  'application/json',
-      'Authorization': 'my-auth-token'
+      'Accept':  'application/json'
     })
-  };
+  };*/
 
   constructor(private http: HttpClient) {
   }
 
   getRandomDadJoke(): Observable<any> {
-    return this.http.get('https://icanhazdadjoke.com');
+    return this.http.get('https://icanhazdadjoke.com'); // Need to add this.httpOptions but getting error.
   }
 }
