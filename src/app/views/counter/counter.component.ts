@@ -27,6 +27,6 @@ export class CounterComponent implements OnInit{
     this.counterChange.emit();
   }
 
-  ngOnInit() {
+  ngOnInit() :void {
   }
 }
